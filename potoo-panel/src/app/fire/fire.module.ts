@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 
-import { AngularFireStorage } from '@angular/fire/storage';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 const modules = [
-  AngularFireStorage,
-  AngularFirestore
+  AngularFireStorageModule, AngularFirestoreModule
 ];
 
 @NgModule({
