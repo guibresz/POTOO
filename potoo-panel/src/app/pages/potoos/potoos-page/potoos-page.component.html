@@ -1,1 +1,7 @@
-<p>prout</p>
+<ul>
+    <li *ngFor="let potoo of potoos | async">
+        <h4>{{ potoo.name }}</h4>
+        <p>{{ potoo.description }}</p>
+        <img [src]="potoo.image"> 
+    </li>
+</ul>

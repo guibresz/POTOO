@@ -12,5 +12,7 @@ export class PotoosService {
 
   readonly potoos: Observable<Potoo[]>;
 
-  constructor(private storage: AngularFireStorage, private store: AngularFirestore) { }
+  constructor(private storage: AngularFireStorage, private store: AngularFirestore) {
+    this.potoos = store.collection('potoos').valueChanges() as Observable<Potoo[]>;
+  }
 }

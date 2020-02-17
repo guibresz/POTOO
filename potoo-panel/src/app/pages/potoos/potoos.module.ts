@@ -13,7 +13,7 @@ import { PotoosService } from './service/potoos.service';
     CommonModule,
     MaterialModule,
     FireModule,
-    // PotoosRoutingModule
+    PotoosRoutingModule
   ],
   exports: [
     PotoosRoutingModule,
