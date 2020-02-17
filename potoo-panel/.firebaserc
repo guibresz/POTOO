@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "potoo-panel": {
+      "hosting": {
+        "potoo-panel": [
+          "potoo-panel"
+        ]
+      }
+    }
+  }
+}

@@ -1,3 +1,6 @@
+import { appInfo } from './app.info';
+
 export const environment = {
-  production: true
+  production: true,
+  info: appInfo
 };

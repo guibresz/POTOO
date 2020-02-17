@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "potoo-panel",
+      "public": "dist/potoo-panel",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
