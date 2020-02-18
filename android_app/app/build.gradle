@@ -5,8 +5,8 @@ android {
     buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.example.potoo"
-        minSdkVersion 15
-        targetSdkVersion 29
+        minSdkVersion 22
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
