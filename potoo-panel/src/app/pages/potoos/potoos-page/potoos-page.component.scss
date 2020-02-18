@@ -1,0 +1,43 @@
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    
+    @for $var from 0 to 20 {
+        .card-#{$var} {
+            height: 200px;
+            width: auto;
+            margin: 10px;
+            opacity: 0;
+            animation-name: pop;
+            animation-duration: 1s;
+            animation-delay: $var * 0.1s;
+            animation-fill-mode: forwards;
+
+            img {
+                height: 100%;
+                width: auto;
+                border-radius: 10px;
+            }
+    
+        }
+    }
+
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: rotateY(200deg);
+    }
+
+    50% {
+        transform: rotateY(400deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+}

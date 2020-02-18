@@ -1,7 +1,5 @@
-<ul>
-    <li *ngFor="let potoo of potoos | async">
-        <h4>{{ potoo.name }}</h4>
-        <p>{{ potoo.description }}</p>
-        <img [src]="potoo.image"> 
-    </li>
-</ul>
+<div class="container box">
+    <div [class]="'card-' + (i % 20)" *ngFor="let potoo of potoos | async ; let i = index">
+        <img [src]="potoo.image" />
+    </div>
+</div>
